@@ -1,0 +1,6 @@
+Exercise3-2. Observe in irb how the number of variables on the left side on the assignment sign versus what is on the right side and the usage of a final comma influence the definition of the variables in the following statements:
+arg1, arg2 = 1
+arg1, arg2 = 1,[2,3],4
+arg1, (arg2, arg3) = 1,2,3,4
+arg1, arg2, arg3, = 1,2,3,4
+Try to deduce rules of that observation.

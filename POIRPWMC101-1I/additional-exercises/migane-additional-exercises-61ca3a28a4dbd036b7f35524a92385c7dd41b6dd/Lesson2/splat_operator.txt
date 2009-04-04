@@ -1,0 +1,4 @@
+Exercise3-3. Observe in irb how variables are assigned in the following statement:
+arg1, arg2 = *{1 => "a", 2 => "b"} 
+Try to find what the * operator does.
+
