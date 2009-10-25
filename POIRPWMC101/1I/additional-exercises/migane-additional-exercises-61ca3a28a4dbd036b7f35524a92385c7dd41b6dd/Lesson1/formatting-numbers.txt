@@ -1,0 +1,5 @@
+Exercise4-b. Given the number 123.999, print it in the following formats:
+00123.50
+123.49900
+  123 
+Note: Use the Kernel's format method.
