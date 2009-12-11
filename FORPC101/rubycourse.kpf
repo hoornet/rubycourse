@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="431cd89a-e20d-4211-bf6c-2a5e66efc51a" kpf_version="4" name="rubycourse.kpf">
+<preference-set idref="431cd89a-e20d-4211-bf6c-2a5e66efc51a">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+</project>
