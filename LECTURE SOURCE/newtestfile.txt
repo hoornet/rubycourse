@@ -1,2 +1,0 @@
-This is line one\n
-This is line two\n
