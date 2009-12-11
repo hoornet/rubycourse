@@ -1,0 +1,52 @@
+Assignments:
+
+Q1. Write a Ruby program that asks for a numeric value of the temperature in degrees Fahrenheit. Finally, the program displays the equivalent value in degrees Centigrade. To format the output to say 2 decimal places, we can use the Kernel's format method. For example, if x = 45.5678 then format("%.2f", x) will return a string 45.57. Another way is to use the round function as follows: puts (x*100).round/100.0
+
+Solution: p006ftoc.rb
+
+
+Q2. Write a Ruby program that asks for a year and then displays to the user whether the year entered by him/her is a leap year or not.
+
+Solution: p016leapyear.rb
+
+
+Q3. Write a method leap_year. Accept a year value from the user, check whether it's a leap year and then display the number of minutes in that year.
+
+Solution: p017leapyearmtd.rb
+
+
+Q4. Write a Ruby program that, when given an array as collection = [1, 2, 3, 4, 5] it calculates the sum of its elements. 
+
+Solution: p020arraysum.rb
+
+
+Q5. Write a Ruby program that, when given an array as collection = [12, 23, 456, 123, 4579] it displays for each number, whether it is odd or even.
+
+Solution: p021oddeven.rb
+
+
+Q6. Given a string s = 'key=value', create two strings s1 and s2 such that s1 contains key and s2 contains value. Hint: Use some of the String functions.
+
+Solution: p021rangesex.rb
+
+
+Q7. Write a Deaf Grandma program. Whatever you say to grandma (whatever you type in), she should respond with HUH?!  SPEAK UP, SONNY!, unless you shout it (type in all capitals). If you shout, she can hear you (or at least she thinks so) and yells back, NO, NOT SINCE 1938! To make your program really believable, have grandma shout a different year each time; maybe any year at random between 1930 and 1950. You can't stop talking to grandma until you shout BYE.
+
+Solution: p026zdeafgm1.rb
+
+
+Q8. Extend your Deaf Grandma program: What if grandma doesn't want you to leave? When you shout BYE, she could pretend not to hear you. Change your previous program so that you have to shout BYE three times in a row. Make sure to test your program: if you shout BYE three times, but not in a row, you should still be talking to grandma.
+
+Solution: p026zdeafgm2.rb
+
+
+Q9. Write a Ruby program to do the following. Take two text files say A and B. The program should swap the contents of A and B ie. after the program is executed, A should contain B's contents and B should contains A's.
+
+Solution: p028swapcontents.rb
+
+
+
+
+
+
+
