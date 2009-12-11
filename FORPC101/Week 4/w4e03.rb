@@ -48,3 +48,4 @@ str.sub!(/word/, "inserted word")
 #print the whole thing
 puts str
 
+open(file_name.chomp, "w") { |f| f << str }

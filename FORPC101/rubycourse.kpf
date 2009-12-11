@@ -4,4 +4,28 @@
 <preference-set idref="431cd89a-e20d-4211-bf6c-2a5e66efc51a">
   <boolean id="import_live">1</boolean>
 </preference-set>
+<preference-set idref="431cd89a-e20d-4211-bf6c-2a5e66efc51a/Week 4/w4e03.rb">
+<preference-set id="Invocations">
+<preference-set id="default">
+  <string id="cookieparams"></string>
+  <string id="cwd"></string>
+  <string id="documentRoot"></string>
+  <string id="executable-params"></string>
+  <string relative="path" id="filename">Week%204/w4e03.rb</string>
+  <string id="getparams"></string>
+  <string id="language">Ruby</string>
+  <string id="mpostparams"></string>
+  <string id="params"></string>
+  <string id="postparams"></string>
+  <string id="posttype">application/x-www-form-urlencoded</string>
+  <string id="request-method">GET</string>
+  <boolean id="show-dialog">1</boolean>
+  <boolean id="sim-cgi">0</boolean>
+  <boolean id="use-console">0</boolean>
+  <string id="userCGIEnvironment"></string>
+  <string id="userEnvironment"></string>
+</preference-set>
+</preference-set>
+  <string id="lastInvocation">default</string>
+</preference-set>
 </project>
