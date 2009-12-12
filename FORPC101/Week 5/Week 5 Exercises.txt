@@ -1,0 +1,70 @@
+Exercise1. - DONE
+Write a class called Dog, that has name as an instance variable
+and the following methods:
+
+bark(), eat(), chase_cat()
+
+I shall create the Dog object as follows:
+
+d = Dog.new('Leo')
+###########################################################
+
+Exercise2. - DONE
+Write a Rectangle class. I shall use your class as follows:
+
+r = Rectangle.new(23.45, 34.67)
+puts 'Area is = ' + r.area().to_s
+puts 'Perimeter is = ' + r.perimeter.to_s
+###########################################################
+
+Exercise3.
+Call this program (p026zdeafgm2.rb) - Modify your Deaf Grandma
+program (Week 4 / Exercise7):
+What if grandma doesn't want you to leave? When you shout BYE, she could
+pretend not to hear you.
+Change your previous program so that you have to shout BYE three times in a row.
+Make sure to test your program: if you shout BYE three times, but not in a row,
+you should still be talking to grandma. You must shout BYE three separate times.
+If you shout BYEBYEBYE or BYE BYE BYE, grandma should pretend not to hear you
+(and not count it as a BYE).
+
+From Chris Pine's Book.
+###########################################################
+
+Exercise4.
+Write a Ruby program (call it p028swapcontents.rb) to do the following.
+Take two text files say A and B. The program should swap the contents of A and B.
+That is after the program is executed, A should contain B's contents and B should
+contains A's contents.
+###########################################################
+
+Exercise5.
+Difficulty level: MEDIUM Write a one-line Ruby script that displays on
+the screen all the files in the current folder as well as everything in all its
+sub folders, in sorted order. Make use of Dir.glob method as follows:
+
+Dir.glob('**/*')
+
+Name this program inventory.rb. Create an inventory file by typing the following
+at the command prompt:
+
+ruby inventory.rb > old-inventory.txt
+
+After a few days, when some files would have been added / deleted from this
+folder, run the program again like:
+
+ruby inventory.rb > new-inventory.txt
+
+Now, write another Ruby script that displays on the screen all the files that
+have been added in this folder since the time the old-inventory.txt was created.
+###########################################################
+
+Exercise6.
+Continue with Lesson 4 Exercise 8. Complete the following steps:
+
+4. Temporarily remove all whitespace and measure the length of the resulting
+string to get the character count excluding spaces.
+5. Split on whitespace to find out how many words there are.
+6. Split on full stops (.), '!' and '?' to find out how many sentences there are.
+7. Split on double newlines to find out how many paragraphs there are.
+8. Perform calculations to work out the averages.

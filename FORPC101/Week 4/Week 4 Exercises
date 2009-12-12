@@ -1,4 +1,5 @@
-Exercise1. Why is the output of this program:
+Exercise1. DONE
+Why is the output of this program:
 
 def method
  a = 50
@@ -13,13 +14,19 @@ as shown below:
 50
 10
 
-Exercise2. This is a non-programming exercise. Try to discover the difference between the methods:
+#######################################################
+Exercise2.
+This is a non-programming exercise.
+Try to discover the difference between the methods:
 
 to_str, to_s
 
 Show examples if you can.
+#######################################################
 
-Exercise3. Thanks to Marcos Souza for this exercise. A plain text file has the following contents:
+Exercise3. - DONE
+Thanks to Marcos Souza for this exercise.
+A plain text file has the following contents:
 
 test test test test test
 test test test test test
@@ -33,7 +40,9 @@ test test test test test
 test test test test test
 test test test test test
 
-Observe that in this file, there exists a word 'word'. Write a clever but readable Ruby program that updates this file and the final contents become like this:
+Observe that in this file, there exists a word 'word'.
+Write a clever but readable Ruby program that updates
+this file and the final contents become like this:
 
 test test test test test
 test test test test test
@@ -48,6 +57,7 @@ test test test test test
 test test test test test
 
 Do not hard-code the file name.
+#######################################################
 
 Exercise4. Make use of the class Dir for the following -
 a. Display your current working directory.
@@ -56,13 +66,15 @@ c. Change your working directory to tmp.
 d. Display your current working directory.
 e. Go back to your original directory.
 f. Delete the tmp directory.
+#######################################################
 
 Exercise5. Given the following Ruby code snippet:
 
 a = (1930...1951).to_a
 puts a[rand(a.size)]
 
-When you run this program, which of the following values will not be displayed?
+When you run this program, which of the
+following values will not be displayed?
 
    1. 1929
    2. 1930
@@ -72,9 +84,25 @@ When you run this program, which of the following values will not be displayed?
    6. 1952
 
 Explain why that value will not be displayed.
-Exercise6. Given a string s = 'key=value', create two strings s1 and s2 such that s1 contains key and s2 contains value. Hint: Use some of the String functions. Call this program p021rangesex.rb
 
-Exercise7. Write a Deaf Grandma program (call it p026zdeafgm1.rb). Whatever you say to grandma (whatever you type in), she should respond with HUH?! SPEAK UP, SONNY!, unless you shout it (type in all capitals). If you shout, she can hear you (or at least she thinks so) and yells back, NO, NOT SINCE 1938! To make your program really believable, have grandma shout a different year each time; maybe any year at random between 1930 and 1950. You can't stop talking to grandma until you shout BYE.
+#######################################################
+
+Exercise6. Given a string s = 'key=value', create two strings
+s1 and s2 such that s1 contains key and s2 contains value.
+Hint: Use some of the String functions. Call this program
+p021rangesex.rb
+#######################################################
+
+Exercise7. Write a Deaf Grandma program
+(call it p026zdeafgm1.rb). Whatever you say to grandma
+(whatever you type in), she should respond with
+HUH?! SPEAK UP, SONNY!, unless you shout it
+(type in all capitals). If you shout, she can hear you
+(or at least she thinks so) and yells back,
+NO, NOT SINCE 1938! To make your program really believable,
+have grandma shout a different year each time; maybe any year
+at random between 1930 and 1950. You can't stop talking to
+grandma until you shout BYE.
 
 From Chris Pine's Book.
 
@@ -84,11 +112,27 @@ You enter: Hello Grandma
 Grandma responds: HUH?! SPEAK UP, SONNY!
 You enter: HELLO GRANDMA
 Grandma responds: NO, NOT SINCE 1938!
+#######################################################
+
 Exercise8.
 
-First of all, I'd like to thank Peter Cooper for allowing me to use this exercise.
+First of all, I'd like to thank Peter Cooper for
+allowing me to use this exercise.
 
-The application you're going to develop will be a text analyzer. You will be working on it this and next week. Your Ruby code will read in text supplied in a separate file, analyze it for various patterns and statistics, and print out the results for the user. It's not a 3D graphical adventure or a fancy Web site, but text processing programs are the bread and butter of systems administration and most application development. They can be vital for parsing log files and user-submitted text on Web sites, and manipulating other textual data. With this application you'll be focusing on implementing the features quickly, rather than developing an elaborate object-oriented structure, any documentation, or a testing methodology.
+The application you're going to develop will be a
+text analyzer. You will be working on it this and
+next week. Your Ruby code will read in text supplied
+in a separate file, analyze it for various patterns
+and statistics, and print out the results for the user.
+It's not a 3D graphical adventure or a fancy Web site,
+but text processing programs are the bread and butter
+of systems administration and most application development.
+They can be vital for parsing log files and user-submitted
+text on Web sites, and manipulating other textual data.
+With this application you'll be focusing on implementing
+the features quickly, rather than developing an elaborate
+object-oriented structure, any documentation, or a testing
+methodology.
 
 Your text analyzer will provide the following basic statistics:
 
@@ -101,48 +145,109 @@ Your text analyzer will provide the following basic statistics:
    7. Average number of words per sentence
    8. Average number of sentences per paragraph
 
-In the last two cases, the statistics are easily calculated from the word count, sentence count, and paragraph count. That is, once you have the total number of words and the total number of sentences, it becomes a matter of a simple division to work out the average number of words per sentence.
+In the last two cases, the statistics are easily calculated
+from the word count, sentence count, and paragraph count.
+That is, once you have the total number of words and the
+total number of sentences, it becomes a matter of a simple
+division to work out the average number of words per sentence.
 
-Before you start to code, the first step is to get some test data that your analyzer can process. You can find the text at:
+Before you start to code, the first step is to get some
+test data that your analyzer can process. You can find the text at:
 http://rubylearning.com/data/text.txt
 
-Save the file in the same folder as your other Ruby programs and call it text.txt. Your application will read from text.txt by default (although you'll make it more dynamic and able to accept other sources of data later on).
+Save the file in the same folder as your other Ruby programs
+and call it text.txt. Your application will read from
+text.txt by default (although you'll make it more dynamic
+and able to accept other sources of data later on).
 
 Let me outline the basic steps you need to follow:
 
-   1. Load in a file containing the text or document you want to analyze.
-   2. As you load the file line by line, keep a count of how many lines there are (one of your statistics taken care of).
-   3. Put the text into a string and measure its length to get your character count.
-   4. Temporarily remove all whitespace and measure the length of the resulting string to get the character count excluding spaces.
-   5. Split on whitespace to find out how many words there are.
-   6. Split on full stops (.), '!' and '?' to find out how many sentences there are.
-   7. Split on double newlines to find out how many paragraphs there are.
+   1. Load in a file containing the text or document
+   you want to analyze.
+   2. As you load the file line by line, keep a count
+   of how many lines there are (one of your statistics
+   taken care of).
+   3. Put the text into a string and measure its length
+   to get your character count.
+   4. Temporarily remove all whitespace and measure the
+   length of the resulting string to get the character
+   count excluding spaces.
+   5. Split on whitespace to find out how many words
+   there are.
+   6. Split on full stops (.), '!' and '?' to find out
+   how many sentences there are.
+   7. Split on double newlines to find out how many
+   paragraphs there are.
    8. Perform calculations to work out the averages.
 
-Create a new, blank Ruby source file and save it as analyzer.rb in your Ruby folder.
+Create a new, blank Ruby source file and save it as analyzer.rb
+in your Ruby folder.
+
+#######################################################
+
 Exercise9.
-Write a Ruby program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz". Discuss this in the FizzBuzz Forum.
+Write a Ruby program that prints the numbers from 1 to 100.
+But for multiples of three print "Fizz" instead of the number
+and for multiples of five print "Buzz". For numbers which
+are multiples of both three and five print "FizzBuzz".
+Discuss this in the FizzBuzz Forum.
 
-Exercise10. Given a string, let us say that we want to reverse the word order (rather than character order). You can use String.split, which gives you an array of words. The Array class has a reverse method; so you can reverse the array and use join to make a new string. Write this program.
+#######################################################
 
-Exercise11. Write a Ruby program (p020arraysum.rb) that, when given an array: collection = [1, 2, 3, 4, 5] calculates the sum of its elements.
+Exercise10. Given a string, let us say that we want to
+reverse the word order (rather than character order).
+You can use String.split, which gives you an array of words.
+The Array class has a reverse method; so you can reverse
+the array and use join to make a new string. Write this program.
 
-Exercise12. Write a Ruby program (p021oddeven.rb) that, when given an array: collection = [12, 23, 456, 123, 4579] prints each number, and tells you whether it is odd or even.
+#######################################################
+
+Exercise11. Write a Ruby program (p020arraysum.rb) that,
+when given an array: collection = [1, 2, 3, 4, 5] calculates
+the sum of its elements.
+
+#######################################################
+
+Exercise12. Write a Ruby program (p021oddeven.rb) that,
+when given an array: collection = [12, 23, 456, 123, 4579]
+prints each number, and tells you whether it is odd or even.
+
+#######################################################
 
 Exercise13. Something to keep your grey cells ticking.
 
-I have a database of all the course participants. I want to know the number of participants who have not attempted Quiz 1 (is it so scary smile ?). A student writes a clever Ruby program that creates an array of 0's and 1's. 0's indicate that the participant has not attempted the Quiz and the 1's have attempted it.
+I have a database of all the course participants.
+I want to know the number of participants who have not
+attempted Quiz 1 (is it so scary smile ?). A student writes
+a clever Ruby program that creates an array
+of 0's and 1's. 0's indicate that the participant has not
+attempted the Quiz and the 1's have attempted it.
 
 Use this array quiz:
 
 quiz = [0,0,0,1,0,0,1,1,0,1]
 
-and write another clever program to solve my problem. That is display thenumber of participants who have not attempted Quiz 1.
+and write another clever program to solve my problem.
+That is display thenumber of participants who have not
+attempted Quiz 1.
 
 The output of your program should be as follow:
-The number of participants who did not attempt Quiz 1 is x out of y total participants.
+The number of participants who did not attempt
+Quiz 1 is x out of y total participants.
 
-Exercise14. Ruby is a DRY language. Ruby helps you keep your code short and concise. DRY stands for: Don’t Repeat Yourself. Syntactically, it’s a very efficient language: you can express the same thing with less lines of code. As we know, computers are fast enough that more lines of code do not slow them down. But what about you? When it comes to debugging and maintaining, the more code you have to deal with, the harder it is to see what it does and find the problems that need fixing. Here's some code:
+#######################################################
+
+Exercise14.  DONE
+
+Ruby is a DRY language. Ruby helps you keep
+your code short and concise. DRY stands for: Don’t Repeat
+Yourself. Syntactically, it’s a very efficient language:
+you can express the same thing with less lines of code.
+As we know, computers are fast enough that more lines of
+code do not slow them down. But what about you? When it
+comes to debugging and maintaining, the more code you have
+to deal with, the harder it is to see what it does and find
+the problems that need fixing. Here's some code:
 # The long way
 record = Hash.new
 record[:name] = “Satish”
@@ -152,7 +257,13 @@ return record
 
 Rewrite, the above code in one line, the DRY (or Ruby) way.
 
-Exercise16. The next set of exercises are sample questions from the Important "Ruby Association Certified Ruby Programmer" Important examination. Thanks to Satoshi Asakawa for the Japanese to English translation.
+#######################################################
+
+
+Exercise16. The next set of exercises are sample questions
+from the Important "Ruby Association Certified Ruby Programmer"
+Important examination. Thanks to Satoshi Asakawa for the
+Japanese to English translation.
 
 Select all answers which return true.
 h = { "Ruby" => "Matz", "Perl" => "Larry", "Python" => "Guido" }
@@ -163,6 +274,8 @@ Answers:
 4. h.include?("Ruby")
 5. h.has_value?("Larry")
 6. h.exists?("Perl")
+
+#######################################################
 
 Exercise17. Select all correct outputs for the following program.
 
@@ -185,7 +298,10 @@ Answers:
 
 4. Syntax Error
 
-Exercise18. Select all correct ways to do an ascending sort by string length.
+#######################################################
+
+
+Exercise18. Select all correct ways to do an ascending sortby string length.
 a = ["Magazine", "Sunday", "Jump"]
 Answers:
 1. a.sort
