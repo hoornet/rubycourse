@@ -23,3 +23,4 @@ have been added in this folder since the time the old-inventory.txt was created.
 
 ###########################################################
 
+Dir.glob('**/*')
