@@ -30,5 +30,7 @@ have been added in this folder since the time the old-inventory.txt was created.
 #USAGE = "ruby inventory.rb > old-inventory.txt"
 
 ################################################################################
-File.open(ARGV[0], 'w') { |f| f << Dir.glob('**/*') }
+File.open(ARGV[0], 'w') do |f|
+  f << Dir.glob('**/*')
+end
 

@@ -50,6 +50,10 @@ at the command prompt:
 
 ruby inventory.rb > old-inventory.txt
 
+DONE FOR THIS PART!
+
+#############################
+
 After a few days, when some files would have been added / deleted from this
 folder, run the program again like:
 
