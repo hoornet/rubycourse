@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Week7" type="RubyRunConfigurationType" factoryName="Ruby">
+    <module name="rubycourse" />
+    <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e STDOUT.sync=true;STDERR.sync=true;load($0=ARGV.shift)" />
+    <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$/FORPC101/Week 7" />
+    <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+    <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+    <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+    <envs />
+    <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/FORPC101/Week 7/w7e2.rb" />
+    <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+    <RunnerSettings RunnerId="RubyRunner" />
+    <ConfigurationWrapper RunnerId="RubyRunner" />
+    <method />
+  </configuration>
+</component>
